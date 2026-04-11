@@ -3,7 +3,7 @@
 
 void addStudent(char* name, double gpa, char* names[], double gpas[], int& size, int capacity) {
     if (size == capacity)
-        throw std::runtime_error("List is full");
+        throw std::runtime_error("List full");
     
     names[size] = new char[strlen(name) + 1];
     strcpy(names[size], name);
@@ -22,7 +22,7 @@ void printStudent(const char* name, double gpa) {
 
 double averageGPA(const double gpas[], int size) {
     if (size == 0)
-        throw std::runtime_error("No Students in list.");
+        throw std::runtime_error("No students");
 
     double sum = 0.0;
     for (int i = 0; i < size; ++i) 
