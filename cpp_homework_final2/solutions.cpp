@@ -30,4 +30,3 @@ double averageGPA(const double gpas[], int size) {
 
     return sum/size;
 }
-
